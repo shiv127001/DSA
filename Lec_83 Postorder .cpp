@@ -6,11 +6,12 @@
 #include <set>
 using namespace std;
 
-struct node{
-    int data;
+typedef struct node{
+    int data ;
     struct node* left;
     struct node* right;
-};
+}node;
+
 
 vector<int> postorder_traversal_iteratively(struct node* root)
 {

@@ -6,12 +6,12 @@
 #include <set>
 using namespace std;
 
-struct node
-{
-    int data;
-    struct node *left;
-    struct node *right;
-};
+typedef struct node{
+    int data ;
+    struct node* left;
+    struct node* right;
+}node;
+
 
 int height(struct node *root)
 {

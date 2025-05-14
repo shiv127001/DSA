@@ -6,11 +6,11 @@
 #include <set>
 using namespace std;
 
-struct node{
-    int data;
+typedef struct node{
+    int data ;
     struct node* left;
     struct node* right;
-};
+}node;
 
 void inorder_recursively(struct node* newnode)
 {
