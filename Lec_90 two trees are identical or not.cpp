@@ -55,11 +55,17 @@ node* buildtree()
     return root;
 }
 
+bool are_identical(node* t1, node* t2)
+{
+    return true;
+}
+
 int main()
 {
     cout<<"Tree1";
     node* t1 = buildtree();
     cout<<"\nTree2";
-    node* t1 = buildtree();
+    node* t2 = buildtree();
+    cout<<are_identical(t1,t2);
     return 0;
 }
