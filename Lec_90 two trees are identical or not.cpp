@@ -22,6 +22,8 @@ typedef struct node{
 node* buildtree()
 {
     int value;
+    int value1;
+    int value2;
     cout <<"Enter the value for node (-1 for NULL)";
     cin>>value;
 
@@ -35,13 +37,29 @@ node* buildtree()
         q.pop();
 
         cout<<"Enter the left child for "<<current->data<<" (-1 for NULL)";
-        cin>>value;
-        if(value != -1)
+        cin>>value1;
+        if(value1 != -1)
         {
-            current->left = new node(value);
+            current->left = new node(value1);
             q.push(current->left);
         }
+
+        cout<<"Enter the right child for "<<current->data<<" (-1 for NULL)";
+        cin>>value2;
+        if(value2 != -1)
+        {
+            current->right = new node(value2);
+            q.push(current->right);
+        }
     }
+    return root;
+}
 
-
+int main()
+{
+    cout<<"Tree1";
+    node* t1 = buildtree();
+    cout<<"\nTree2";
+    node* t1 = buildtree();
+    return 0;
 }
