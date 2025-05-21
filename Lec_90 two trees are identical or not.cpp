@@ -57,7 +57,14 @@ node* buildtree()
 
 bool are_identical(node* t1, node* t2)
 {
-    return true;
+    if (t1== NULL && t2==NULL) return true;
+    if (t1== NULL || t2==NULL) return false;
+    int l1,l2;
+    l1 = t1->data;
+    l2 = t2->data;
+    if(l1!=l2) return false;
+    are_identical(t1->left,t2->left);
+    are_identical(t1->right,t2->right);
 }
 
 int main()
