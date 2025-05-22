@@ -75,23 +75,11 @@ vector<vector<int>> zigzagLevelOrder(node *root)
             node *current = q.front();
             q.pop();
             int index;
-            if (lefttoright)
-            {
-                index = i;
-            }
-            else
-            {
-                index = size - 1 - i;
-            }
+            if (lefttoright) index = i;
+            else index = size - 1 - i;
             row[index] = current->data;
-            if (current->left)
-            {
-                q.push(current->left);
-            }
-            if (current->right)
-            {
-                q.push(current->right);
-            }
+            if (current->left) q.push(current->left);
+            if (current->right) q.push(current->right);
         }
         lefttoright = !lefttoright;
         result.push_back(row);
