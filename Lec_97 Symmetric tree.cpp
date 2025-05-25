@@ -119,9 +119,9 @@ bool symm(node *a, node *b)
 bool isSymmetric(node *root)
 {
     if (root == NULL)
-        return true;
+        return true ;
     if (root->left == NULL && root->right == NULL)
-        return true;
+        return true ;
     if (root->left == NULL && root->right != NULL)
         return false;
     if (root->left != NULL && root->right == NULL)
