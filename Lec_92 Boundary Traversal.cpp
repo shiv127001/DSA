@@ -119,7 +119,7 @@ int main()
     node *t1 = buildtree();
     vector<int> a = Boundarytraversal(t1);
     cout<<"Boundary level traversal is\n";
-    for (int i = 0; i < a.size(); ++i)
+    for (int i = 0; i < (a.size()); ++i)
     {
         cout << a[i] << ", ";
     }
