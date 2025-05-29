@@ -55,3 +55,36 @@ node *buildtree()
     }
     return root;
 }
+
+bool root_to_node_path(node* root,int value,vector<int> &res)
+{
+    if (root == NULL) return false;
+    res.push_back(root->data);
+    if (value == root->data) return true ;
+    if(root_to_node_path(root->left,value,res) || root_to_node_path(root->right, value,res) ) 
+    {
+        return true;
+    }
+    res.pop_back();
+    return false;
+}
+
+int main()
+{
+    cout << "Tree";
+    node *t1 = buildtree();
+    int value ;
+    cout<<"Enter the nodes value:\n";
+    cin>>value;
+    vector<int> res;
+    bool a = root_to_node_path(t1,value,res);
+    int len = res.size();
+    cout<<"THE PATH FROM THE ROOT NODE TO GIVEN NODE IS : \n";
+    for(int i=0;i<len;++i)
+    {
+        cout<<res[i]<<"->";
+    }
+    cout<<"\n-----Ans is : "<<a;
+    cout<<endl;
+    return 0;
+}
