@@ -6,9 +6,10 @@ using namespace std;
 int main()
 {
     string caption1 = "Check out my NEW video! #FunTime :)";
+    string caption2 = "#$%^==Check o++ut my NEW video! #FunTime caption2:)";
     string word,tag = "#";
     bool first_word = true;
-    stringstream ss(caption1);
+    stringstream ss(caption2);
     while(ss>>word)
     {
         string temp;
