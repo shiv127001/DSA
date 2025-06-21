@@ -5,6 +5,7 @@
         "xiosbase": "cpp",
         "ios": "cpp",
         "vector": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "utility": "cpp"
     }
 }
