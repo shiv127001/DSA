@@ -6,6 +6,7 @@
         "ios": "cpp",
         "vector": "cpp",
         "xtree": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "map": "cpp"
     }
 }
