@@ -73,7 +73,17 @@ int longestSubarrayWithSumK(vector<int> arr, int n, int k)
 
 int main()
 {
-    vector<int> arr = {1, 2, 3, 1, 1, 1, 1};
+    vector<int> arr;
+    cout<<"Enter the length of user input : \n";
+    int user_input_size;
+    cin>>user_input_size;
+    int x;
+    cout<<"\nEnter the array elements \n";
+    for(int i=0;i<user_input_size;++i)
+    {
+        cin>>x;
+        arr.push_back(x);
+    }
     int k = 4, n = 7;
     int sumk_with_BRUTE_FORCE = longestSubarrayWithSumK_BRUTE_FORCE(arr, n, k);
     cout << "Longest Subarray length (BRUTE FORCE) = " << sumk_with_BRUTE_FORCE;
