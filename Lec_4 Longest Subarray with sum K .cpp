@@ -31,11 +31,7 @@ int longestSubarrayWithSumK_OPTIMAL(vector<int> arr, int n, int k)
     for (i = 0; i < n; ++i)
     {
         sum += arr[i];
-        if (sum == k)
-        {
-            longest = max(longest, i + 1);
-        }
-        
+        if (sum == k) longest = max(longest, i + 1);
         int remain = sum - k;
         if (mpp.find(remain) != mpp.end())
         {
