@@ -8,6 +8,8 @@
         "xtree": "cpp",
         "utility": "cpp",
         "map": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "sstream": "cpp",
+        "xhash": "cpp"
     }
 }
