@@ -7,6 +7,7 @@ using namespace std;
 
 class Solution_better {
 public:
+    // Time Complexity: O(2*(N*M)), where N = no. of rows in the matrix and M = no. of columns in the matrix.
     void setZeroes(vector<vector<int>>& matrix) {
         int i,j;
         int n=matrix.size();
