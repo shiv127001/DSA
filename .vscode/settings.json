@@ -10,6 +10,9 @@
         "map": "cpp",
         "string": "cpp",
         "sstream": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "xutility": "cpp",
+        "list": "cpp",
+        "set": "cpp"
     }
 }
